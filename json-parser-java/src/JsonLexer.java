@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Turns raw JSON source text into a stream of Tokens.
- *
- * Tracks line/column so the parser can produce useful error messages.
- */
 public class JsonLexer {
     private final String source;
     private int pos = 0;

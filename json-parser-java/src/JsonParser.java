@@ -3,22 +3,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * A recursive-descent parser for JSON.
- *
- * Produces a plain Java object tree:
- *   object -> LinkedHashMap<String, Object>
- *   array  -> List<Object>
- *   string -> String
- *   number -> Long (if it fits and has no '.'/exponent) or Double
- *   true/false -> Boolean
- *   null -> null (represented internally, but we just use Java null)
- *
- * NOTE: per the JSON grammar used by the official JSON test suite
- * (http://www.json.org/JSON_checker/), the top-level value of a JSON
- * text must be an object or an array - a bare string/number/etc. at
- * the top level is rejected, even though later JSON RFCs relaxed this.
- */
+
 public class JsonParser {
     private final List<Token> tokens;
     private int pos = 0;

@@ -1,7 +1,3 @@
-#!/usr/bin/env bash
-# Runs the JSON parser against every test file in tests/stepN and checks
-# that files named valid*.json exit 0 and invalid*.json exit 1.
-
 set -u
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUT_DIR="$SCRIPT_DIR/out"

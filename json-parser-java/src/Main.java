@@ -4,16 +4,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-/**
- * Command-line entry point for the JSON parser, built for the
- * Coding Challenges "Write your own JSON parser" exercise.
- *
- * Usage: java -cp out Main <path-to-json-file>
- *
- * Exit codes:
- *   0 - the file contains valid JSON
- *   1 - the file contains invalid JSON, or another error occurred
- */
 public class Main {
     public static void main(String[] args) {
         if (args.length != 1) {

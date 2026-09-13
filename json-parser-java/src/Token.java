@@ -1,10 +1,4 @@
-/**
- * A single lexical token produced by the JsonLexer.
- *
- * `value` holds the *decoded* literal value for STRING (escapes already
- * resolved) and NUMBER (kept as the raw text, parsed to a number by the
- * parser) tokens. For structural tokens it's just the raw character(s).
- */
+
 public class Token {
     public final TokenType type;
     public final String value;

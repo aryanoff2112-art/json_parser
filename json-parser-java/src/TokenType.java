@@ -1,6 +1,3 @@
-/**
- * The different kinds of tokens the lexer can produce.
- */
 public enum TokenType {
     LEFT_BRACE,    // {
     RIGHT_BRACE,   // }
