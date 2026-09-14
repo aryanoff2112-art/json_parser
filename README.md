@@ -1,9 +1,7 @@
 # JSON Parser (Java) — Coding Challenges solution
 
 A hand-written recursive-descent JSON parser with no external dependencies:
-just a lexer, a parser, and a small CLI, built to satisfy the
-[Coding Challenges "Write a JSON Parser"](https://codingchallenges.fyi/challenges/challenge-json-parser)
-exercise, steps 1 through 5.
+just a lexer, a parser, and a small CLI
 
 ## Files
 
