@@ -49,9 +49,9 @@ chmod +x run_tests.sh
 ./run_tests.sh
 ```
 
-Currently: **41/41 tests passing** across steps 1–5.
+Currently: **41/41 tests passing** 
 
-## Trying it against the official json.org test suite (Step 5)
+## Trying it against the official json.org test suite
 
 Download http://www.json.org/JSON_checker/test.zip, unzip it, and run
 each `fail*.json`/`pass*.json` file through the CLI. Two things to note
