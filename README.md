@@ -1,9 +1,7 @@
 # JSON Parser (Java) — Coding Challenges solution
 
 A hand-written recursive-descent JSON parser with no external dependencies:
-just a lexer, a parser, and a small CLI, built to satisfy the
-[Coding Challenges "Write a JSON Parser"](https://codingchallenges.fyi/challenges/challenge-json-parser)
-exercise, steps 1 through 5.
+just a lexer, a parser, and a small CLI
 
 ## Files
 
@@ -51,9 +49,9 @@ chmod +x run_tests.sh
 ./run_tests.sh
 ```
 
-Currently: **41/41 tests passing** across steps 1–5.
+Currently: **41/41 tests passing** 
 
-## Trying it against the official json.org test suite (Step 5)
+## Trying it against the official json.org test suite
 
 Download http://www.json.org/JSON_checker/test.zip, unzip it, and run
 each `fail*.json`/`pass*.json` file through the CLI. Two things to note
