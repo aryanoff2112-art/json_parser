@@ -1,5 +1,8 @@
 # JSON Parser (Java) — Coding Challenges solution
 
+![CI](https://github.com/aryanoff2112-art/REPO/actions/workflows/ci.yml/badge.svg)
+
+
 A hand-written recursive-descent JSON parser with no external dependencies:
 just a lexer, a parser, and a small CLI
 
@@ -23,23 +26,55 @@ just a lexer, a parser, and a small CLI
   pairs, leading zeros, trailing commas, top-level scalars, etc.)
 - `run_tests.sh` — runs the CLI against every file in `tests/*`, checking
   that `valid*.json` exits 0 and `invalid*.json` exits 1
+- `pom.xml` — optional Maven build, if you'd rather not invoke `javac`
+  by hand
+- `.editorconfig` — consistent indentation/line-endings across editors
+- `.github/workflows/ci.yml` — GitHub Actions workflow that builds and
+  tests on every push/PR
+- `.github/ISSUE_TEMPLATE.md`, `.github/PULL_REQUEST_TEMPLATE.md` —
+  templates for issues and pull requests
+- `CONTRIBUTING.md` — how to build, test, and submit changes
+- `LICENSE` — MIT
+
+## Getting the code
+
+```bash
+git clone https://github.com/aryanoff2112-art/REPO.git
+cd REPO
+```
 
 ## Building
 
-Needs a JDK (javac). This environment only had a JRE, so it was built
-here with the `javax.tools.JavaCompiler` API instead — but a normal
-`javac` invocation works too:
+### Option A: plain `javac`
+
+Needs a JDK (`javac`) — any JDK 8+ works.
 
 ```bash
 mkdir -p out
 javac -d out src/*.java
 ```
 
+### Option B: Maven
+
+```bash
+mvn compile
+# or, to build a runnable jar:
+mvn package
+```
+
 ## Running
+
+With plain `javac`:
 
 ```bash
 java -cp out Main path/to/file.json
 echo $?   # 0 = valid, 1 = invalid
+```
+
+With the Maven-built jar:
+
+```bash
+java -jar target/json-parser-1.0.0.jar path/to/file.json
 ```
 
 ## Testing
@@ -49,7 +84,7 @@ chmod +x run_tests.sh
 ./run_tests.sh
 ```
 
-Currently: **41/41 tests passing** 
+Currently: **41/41 tests passing** across steps 1–5.
 
 ## Trying it against the official json.org test suite
 
@@ -65,3 +100,18 @@ about that suite if you do:
    string/number) — this parser already enforces that (see
    `invalid_bare_string_top_level.json` / `invalid_bare_number_top_level.json`
    in `tests/step5`).
+
+## Continuous Integration
+
+A GitHub Actions workflow (`.github/workflows/ci.yml`) compiles the
+project with `javac` and runs `run_tests.sh` on every push and pull
+request against `main`.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for build/test instructions and
+how to add new test cases or submit a pull request.
+
+## License
+
+[MIT](LICENSE)
