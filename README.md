@@ -64,4 +64,4 @@ about that suite if you do:
 2. It expects top-level JSON text to be an object or array (not a bare
    string/number) — this parser already enforces that (see
    `invalid_bare_string_top_level.json` / `invalid_bare_number_top_level.json`
-   in `tests/step5`).
+   in `tests`).
