@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/aryanoff2112-art/REPO/actions/workflows/ci.yml/badge.svg)
 
-
 A hand-written recursive-descent JSON parser with no external dependencies:
 just a lexer, a parser, and a small CLI
 
@@ -110,7 +109,7 @@ request against `main`.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for build/test instructions and
-how to add new test cases or submit a pull request.
+how to add new test cases/submit a pull request.
 
 ## License
 
