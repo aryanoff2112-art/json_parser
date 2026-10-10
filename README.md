@@ -109,7 +109,7 @@ request against `main`.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for build/test instructions and
-how to add new test cases/submit a pull request.
+how to add new test cases or submit a pull request.
 
 ## License
 
