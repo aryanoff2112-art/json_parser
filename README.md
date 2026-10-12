@@ -1,4 +1,4 @@
-# JSON Parser (Java) — Coding Challenges solution
+# JSON Parser (Java)
 
 ![CI](https://github.com/aryanoff2112-art/REPO/actions/workflows/ci.yml/badge.svg)
 
